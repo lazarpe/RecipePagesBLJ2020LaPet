@@ -42,10 +42,26 @@ p.text-center {
 
 button.btn {
     font-size: 17px;
-    border: px black;
+    border: 50px black;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
+    margin-top: -30px;
     ;
+}
+
+recipe.h1.text-center {
+    margin-top: 100%;
+}
+
+h1.recipe {
+    margin-top: 200px;
+    position: relative;
+}
+
+#banner {
+    background-color: #59442B;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
