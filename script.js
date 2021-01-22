@@ -1,12 +1,16 @@
-$(document).ready(function(){
-    $('.count').prop('disabled', true);
-       $(document).on('click','.plus',function(){
-        $('.count').val(parseInt($('.count').val()) + 1 );
+  $(function() {
+    $('.serving').bind('keyup', function(event) {
+        var previousValue = parseFloat($("#previousServing").val());
+        var newValue = parseFloat($(event.target).val());
+        if (previousValue && newValue) {
+            $('.ingredient').each(function(index, elem) {
+                var ingredientNow = $('.amount', elem);
+                var oldIngredientAmount = ingredientNow.text();
+                var newIngredientAmount = oldIngredientAmount * newValue / previousValue;
+                ingredientNow.text(newIngredientAmount);
+            });
+            $('#previousServing').val(newValue);
+        }
     });
-    $(document).on('click','.minus',function(){
-        $('.count').val(parseInt($('.count').val()) - 1 );
-            if ($('.count').val() == 0) {
-                $('.count').val(1);
-            }
-        });
- });
+});
+  

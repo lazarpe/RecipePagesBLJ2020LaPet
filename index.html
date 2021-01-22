@@ -21,7 +21,10 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Backen</title>
   </head>
   <body>
@@ -74,8 +77,6 @@
       </div>
     </section>
 
-    <!-- <img src="wave1.png" class="bottom-img"> -->
-
     <div class="col-md-12 text-center">
       <button type="button" class="btn btn-warning">
         <a href="recipe.pdf" download>Get your recipe here</a>
@@ -87,13 +88,49 @@
         <div class="container">
           <h1 class="text-center">Recipe</h1>
           <h3>Ingredients</h3>
-          <b><p class="text-center" id="select_pices">How many pices would <br> you like to make</p></b>
+          <b
+            ><p class="text-center" id="select_pices">
+              How many pices would <br />
+              you like to make
+            </p></b
+          >
         </div>
-        <div class="qty mt-5">
-          <span class="minus bg-dark">-</span>
-          <input type="number" class="count" name="qty" value="1">
-          <span class="plus bg-dark">+</span>
-      </div>
+
+        Pieces:
+        <input type="text" name="serving" class="serving" value="16" />
+        <input type="hidden" id="previousServing" value="16" />
+
+        <ul class="ingredients">
+          <li class="ingredient">
+            <span class="amount">250</span> g
+            <span class="name">Baking chocolate</span>
+          </li>
+
+          <li class="ingredient">
+            <span class="amount">250</span> g
+            <span class="name">Butter</span>
+          </li>
+
+          <li class="ingredient">
+            <span class="amount">250</span> g
+            <span class="name">Sugar</span>
+          </li>
+
+          <li class="ingredient">
+            <span class="amount">250</span> g
+            <span class="name">Hazelnut / almonds</span>
+          </li>
+
+          <li class="ingredient">
+            <span class="amount">6</span>
+            <span class="name">Eggs</span>
+          </li>
+
+          <li class="ingredient">
+            <span class="amount">100</span> g
+            <span class="name">Flavor</span>
+          </li>
+        </ul>
       </div>
     </section>
 
