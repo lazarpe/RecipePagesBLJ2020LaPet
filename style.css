@@ -33,7 +33,14 @@ footer {
 
 h1.text-center {
   margin-top: 40%;
-  font-size: 65px;
+  font-size: 45px;
+  margin-bottom: 5%;
+}
+
+h1.quote  {
+    margin-top: 15%;
+    text-align: center;
+    font-size:medium;
 }
 
 p.text-center {
@@ -80,7 +87,8 @@ h1.recipe {
 
 input {
   border: 0;
-  width: 2%;
+  width: 5%;
+  text-align: center;
 }
 
 ul {
@@ -103,4 +111,17 @@ ul {
 }
 .Recipe-Ingredient span {
   font-weight: 600;
+}
+
+h4.step {
+    text-align: center
+}
+
+p.card-text {
+    text-align: center
+}
+
+.post {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
