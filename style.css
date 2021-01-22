@@ -43,6 +43,10 @@ h1.quote  {
     font-size:medium;
 }
 
+h1.impressum {
+    margin-top: 10%;
+}
+
 p.text-center {
   font-size: 18px;
 }
@@ -129,3 +133,4 @@ p.card-text {
 img.enjoy {
     margin-top: 10%;
 }
+
