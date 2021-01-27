@@ -12,6 +12,8 @@ html body {
   color: #000000 !important;
 }
 
+
+
 .nav-link {
   color: #000000 !important;
 }
@@ -134,3 +136,15 @@ img.enjoy {
     margin-top: 10%;
 }
 
+.easteregg {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
